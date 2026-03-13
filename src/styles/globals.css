@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+@import 'tailwindcss';
+@source '../**/*.{ts,tsx,html}';
+
+@theme {
+	--color-bg: #09090b;
+	--color-surface: #121218;
+	--color-border: #27272f;
+	--color-muted: #a1a1aa;
+	--color-accent: #d4d4d8;
+
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+
+	--radius-card: 0.5rem;
+
+	--shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+	--spacing-18: 4.5rem;
+	--spacing-30: 7.5rem;
+}
+
+@layer base {
+	* {
+		border-color: color-mix(in oklab, var(--color-border) 100%, transparent);
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		min-width: 320px;
+		background: var(--color-bg);
+		color: #f4f4f5;
+		font-family: var(--font-sans);
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+@layer utilities {
+	.focus-ring {
+		@apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg;
+	}
+}
