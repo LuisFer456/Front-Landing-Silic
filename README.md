@@ -76,16 +76,3 @@ Se agregaron pruebas base para prevenir regresiones en contenido critico:
 - `src/sections/TestimonialsSection.test.tsx`
 - `src/sections/CookiesPage.test.tsx`
 
-## CI/CD
-
-Workflow incluido en:
-
-- `.github/workflows/pages.yml`
-
-Pipeline:
-
-1. `npm ci`
-2. `npm run lint`
-3. `npm run test:run`
-4. `npm run build:pages`
-5. Deploy automatico a GitHub Pages (solo push a `main` o ejecucion manual)
