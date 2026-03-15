@@ -4,16 +4,16 @@ import { Input } from '../components/ui/Input'
 
 export function FinalCtaSection() {
   return (
-    <section id="join-drop" className="border-b border-white/10 py-16 md:py-24">
+    <section id="join-drop" className="border-b border-white/10 py-14 sm:py-16 md:py-24">
       <Container>
-        <div className="relative overflow-hidden border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.12),transparent_32%),linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-7 md:p-10">
+        <div className="relative overflow-hidden border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.12),transparent_32%),linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-5 sm:p-7 md:p-10">
           <div aria-hidden className="absolute inset-y-0 right-0 hidden w-1/3 bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.05),transparent)] lg:block" />
 
           <div className="relative grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
             <div className="space-y-6">
               <div className="space-y-4">
-                <p className="text-xs uppercase tracking-[0.28em] text-zinc-500">Boletin / Proximo lanzamiento</p>
-                <h2 className="max-w-3xl font-serif text-4xl leading-none text-zinc-100 md:text-6xl">
+                <p className="text-[11px] uppercase tracking-[0.22em] text-zinc-500 sm:text-xs sm:tracking-[0.28em]">Boletin / Proximo lanzamiento</p>
+                <h2 className="max-w-3xl font-serif text-[2.05rem] leading-none text-zinc-100 sm:text-4xl md:text-6xl">
                   Acceso privado antes de que se agoten.
                 </h2>
                 <p className="max-w-2xl text-sm leading-6 text-zinc-300 md:text-base">
@@ -21,7 +21,7 @@ export function FinalCtaSection() {
                 </p>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 <div className="border border-white/10 bg-black/20 p-4">
                   <p className="text-[11px] uppercase tracking-[0.24em] text-zinc-500">Acceso</p>
                   <p className="mt-3 text-sm text-zinc-200">Compra anticipada en lanzamientos de alta demanda.</p>
@@ -37,7 +37,7 @@ export function FinalCtaSection() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-black/25 p-6 backdrop-blur-sm md:p-7">
+            <div className="border border-white/10 bg-black/25 p-5 backdrop-blur-sm sm:p-6 md:p-7">
               <div className="space-y-5">
                 <div className="space-y-2">
                   <p className="text-[11px] uppercase tracking-[0.26em] text-zinc-500">Lista de miembros</p>

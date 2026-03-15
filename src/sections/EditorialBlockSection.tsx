@@ -3,7 +3,7 @@ import { Container } from '../components/ui/Container'
 
 export function EditorialBlockSection() {
   return (
-    <section id="editorial" className="border-b border-white/10 py-16 md:py-24">
+    <section id="editorial" className="border-b border-white/10 py-14 sm:py-16 md:py-24">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -17,12 +17,12 @@ export function EditorialBlockSection() {
             alt="Editorial de SILIC"
             loading="lazy"
             decoding="async"
-            className="h-full min-h-[360px] w-full object-cover saturate-[0.8]"
+            className="h-full min-h-[260px] w-full object-cover saturate-[0.8] sm:min-h-[320px] md:min-h-[360px]"
           />
-          <div className="flex items-center border-l border-white/10 p-8 md:p-12">
+          <div className="flex items-center border-t border-white/10 p-6 sm:p-8 md:p-10 lg:border-l lg:border-t-0 lg:p-12">
             <div className="space-y-5">
               <p className="text-xs uppercase tracking-[0.2em] text-zinc-500">Editorial</p>
-              <h2 className="font-serif text-3xl leading-tight text-zinc-100 md:text-5xl">
+              <h2 className="font-serif text-[1.9rem] leading-tight text-zinc-100 sm:text-[2.3rem] md:text-5xl">
                 Lujo real que se nota al instante.
               </h2>
               <p className="text-sm text-zinc-300">

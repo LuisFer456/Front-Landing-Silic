@@ -24,7 +24,7 @@ type AnchorProps = SharedProps &
 type Props = ButtonProps | AnchorProps
 
 const baseStyles =
-  'inline-flex items-center justify-center whitespace-nowrap border border-white/15 text-xs uppercase tracking-[0.24em] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:cursor-not-allowed disabled:opacity-50'
+  'inline-flex items-center justify-center border border-white/15 px-4 text-center text-[11px] uppercase tracking-[0.16em] transition-all duration-300 sm:text-xs sm:tracking-[0.24em] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:cursor-not-allowed disabled:opacity-50'
 
 const variantStyles: Record<Variant, string> = {
   primary: 'bg-white text-black hover:bg-zinc-200',
@@ -33,8 +33,8 @@ const variantStyles: Record<Variant, string> = {
 }
 
 const sizeStyles: Record<Size, string> = {
-  md: 'min-h-11 px-6',
-  lg: 'min-h-12 px-8',
+  md: 'min-h-11 px-5 sm:px-6',
+  lg: 'min-h-12 px-6 sm:px-8',
 }
 
 export function Button({

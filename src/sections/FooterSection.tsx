@@ -6,25 +6,17 @@ const legalLinks = [
   { href: '/privacidad', label: 'Privacidad' },
   { href: '/cookies', label: 'Cookies' },
 ]
-const socialLinks = ['Instagram', 'X', 'Pinterest']
 
 export function FooterSection() {
   return (
     <footer className="py-8">
-      <Container className="flex flex-col gap-5 text-xs uppercase tracking-[0.16em] text-zinc-500 md:flex-row md:items-center md:justify-between">
+      <Container className="flex flex-col items-center gap-5 text-center text-[11px] uppercase tracking-[0.14em] text-zinc-500 sm:text-xs sm:tracking-[0.16em] md:flex-row md:flex-wrap md:justify-center md:text-center">
         <p>© SILIC</p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
           {legalLinks.map((item) => (
             <Link key={item.href} to={item.href} className="transition-colors hover:text-zinc-100 focus-ring" aria-label={item.label}>
               {item.label}
             </Link>
-          ))}
-        </div>
-        <div className="flex gap-4">
-          {socialLinks.map((item) => (
-            <a key={item} href="#" className="transition-colors hover:text-zinc-100 focus-ring" aria-label={item}>
-              {item}
-            </a>
           ))}
         </div>
       </Container>

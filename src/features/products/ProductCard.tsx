@@ -25,12 +25,12 @@ export function ProductCard({ product }: ProductCardProps) {
         />
       </div>
 
-      <div className="space-y-3 p-5">
-        <div className="flex items-center justify-between">
-          <span className="border border-white/15 px-2 py-1 text-[10px] uppercase tracking-[0.18em] text-zinc-300">
+      <div className="space-y-3 p-4 sm:p-5">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <span className="border border-white/15 px-2 py-1 text-[10px] uppercase tracking-[0.16em] text-zinc-300 sm:tracking-[0.18em]">
             {product.tag}
           </span>
-          <span className="text-xs uppercase tracking-[0.18em] text-zinc-400">{product.colorway}</span>
+          <span className="text-[11px] uppercase tracking-[0.14em] text-zinc-400 sm:text-xs sm:tracking-[0.18em]">{product.colorway}</span>
         </div>
 
         <div className="space-y-1">

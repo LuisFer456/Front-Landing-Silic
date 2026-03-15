@@ -78,7 +78,7 @@ function TestimonialIcon({ icon }: Pick<Testimonial, 'icon'>) {
 
 export function TestimonialsSection() {
   return (
-    <section id="archive" className="border-b border-white/10 py-16 md:py-24">
+    <section id="archive" className="border-b border-white/10 py-14 sm:py-16 md:py-24">
       <Container className="space-y-10">
         <SectionHeading
           label="Testimonios"
@@ -97,7 +97,7 @@ export function TestimonialsSection() {
               className="flex h-full flex-col justify-between border border-white/10 bg-white/[0.02] p-6"
             >
               <div className="space-y-5">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                   <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-100">
                     <TestimonialIcon icon={testimonial.icon} />
                   </span>
@@ -106,7 +106,7 @@ export function TestimonialsSection() {
                   </span>
                 </div>
 
-                <blockquote className="font-serif text-2xl leading-tight text-zinc-100">
+                <blockquote className="font-serif text-[1.45rem] leading-tight text-zinc-100 sm:text-2xl">
                   {testimonial.quote}
                 </blockquote>
               </div>

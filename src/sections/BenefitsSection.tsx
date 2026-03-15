@@ -34,7 +34,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section id="benefits" className="border-b border-white/10 py-16 md:py-24">
+    <section id="benefits" className="border-b border-white/10 py-14 sm:py-16 md:py-24">
       <Container className="space-y-10">
         <SectionHeading
           label="Beneficios"
@@ -61,12 +61,12 @@ export function BenefitsSection() {
                   decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5">
+                <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-3 p-4 sm:p-5">
                   <div className="space-y-2">
                     <p className="text-[11px] uppercase tracking-[0.24em] text-zinc-300/80">
                       {benefit.label}
                     </p>
-                    <h3 className="font-serif text-2xl text-white md:text-[2rem]">{benefit.title}</h3>
+                    <h3 className="font-serif text-[1.6rem] leading-tight text-white sm:text-2xl md:text-[2rem]">{benefit.title}</h3>
                   </div>
                   <span className="text-sm uppercase tracking-[0.3em] text-zinc-200/70">
                     {benefit.metric}
@@ -74,8 +74,8 @@ export function BenefitsSection() {
                 </div>
               </div>
 
-              <div className="space-y-5 p-6">
-                <div className="flex items-center justify-between border-b border-white/10 pb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500">
+              <div className="space-y-5 p-5 sm:p-6">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-4 text-[11px] uppercase tracking-[0.2em] text-zinc-500">
                   <span>Experiencia SILIC</span>
                   <span>Valor premium</span>
                 </div>

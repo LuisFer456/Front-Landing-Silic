@@ -54,12 +54,12 @@ export function LegalDocumentPage({ eyebrow, title, description, icon, sections 
       <SkipLink />
       <NavbarSection />
       <main id="main-content" className="pb-16">
-        <section className="border-b border-white/10 py-16 md:py-24">
+        <section className="border-b border-white/10 py-14 sm:py-16 md:py-24">
           <Container className="space-y-10">
-            <div className="grid gap-8 border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-7 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+            <div className="grid gap-8 border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-5 sm:p-7 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
               <div className="space-y-5">
-                <p className="text-xs uppercase tracking-[0.24em] text-zinc-500">{eyebrow}</p>
-                <h1 className="max-w-3xl font-serif text-4xl leading-none text-zinc-100 md:text-6xl">{title}</h1>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-500 sm:text-xs sm:tracking-[0.24em]">{eyebrow}</p>
+                <h1 className="max-w-3xl font-serif text-[2.05rem] leading-none text-zinc-100 sm:text-4xl md:text-6xl">{title}</h1>
                 <p className="max-w-2xl text-sm leading-6 text-zinc-300 md:text-base">{description}</p>
               </div>
 
@@ -72,8 +72,8 @@ export function LegalDocumentPage({ eyebrow, title, description, icon, sections 
 
             <div className="grid gap-5">
               {sections.map((section) => (
-                <article key={section.title} className="border border-white/10 bg-white/[0.02] p-6 md:p-8">
-                  <h2 className="font-serif text-2xl text-zinc-100 md:text-3xl">{section.title}</h2>
+                <article key={section.title} className="border border-white/10 bg-white/[0.02] p-5 sm:p-6 md:p-8">
+                  <h2 className="font-serif text-[1.55rem] text-zinc-100 sm:text-2xl md:text-3xl">{section.title}</h2>
                   <div className="mt-4 space-y-4 text-sm leading-6 text-zinc-300">
                     {section.body.map((paragraph) => (
                       <p key={paragraph}>{paragraph}</p>
