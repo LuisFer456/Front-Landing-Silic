@@ -10,14 +10,11 @@ Landing ecommerce editorial construida con React, TypeScript, Tailwind CSS y Vit
 - React Router
 - Framer Motion
 - ESLint 9
-- Vitest + Testing Library
 
 ## Scripts disponibles
 
 - `npm run dev`: levanta el entorno local.
 - `npm run lint`: valida calidad de codigo.
-- `npm run test`: ejecuta tests en modo watch.
-- `npm run test:run`: ejecuta tests en modo CI.
 - `npm run build`: compila TypeScript y build de produccion.
 - `npm run build:pages`: build para GitHub Pages y genera `dist/404.html` para fallback SPA.
 - `npm run preview`: previsualiza el build local.
@@ -40,7 +37,6 @@ Ejecuta estos comandos antes de subir cambios:
 
 ```bash
 npm run lint
-npm run test:run
 npm run build
 ```
 
@@ -69,10 +65,4 @@ Este proyecto esta configurado para desplegarse en GitHub Pages con GitHub Actio
 4. Haz push a `main`.
 5. El workflow `CI and Deploy Pages` construira y publicara automaticamente.
 
-## Testing agregado
-
-Se agregaron pruebas base para prevenir regresiones en contenido critico:
-
-- `src/sections/TestimonialsSection.test.tsx`
-- `src/sections/CookiesPage.test.tsx`
 
